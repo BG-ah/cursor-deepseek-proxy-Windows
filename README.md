@@ -1,9 +1,11 @@
-# 🧠 Cursor DeepSeek V4 Proxy
+首先，我是参考了另一个同学的地址在这：https://github.com/wustghj/cursor-deepseek-v4-proxy?tab=readme-ov-file
+
+我为什么重新提交呢？
+因为我试了他的方法，没有完全解决我的问题，但是我是在他基础上进行了修改而成功的，大家看他的就行，我这个主要是针对Windows电脑的。
+
+#  Cursor DeepSeek V4 Proxy
 
 > **一键修复 Cursor 使用 DeepSeek V4 时的 `reasoning_content` 错误，告别 `Rate limit exceeded`，让 AI Agent 模式稳定运行。**
-
-[![GitHub stars](https://img.shields.io/github/stars/你的用户名/cursor-deepseek-v4-proxy?style=social)](https://github.com/你的用户名/cursor-deepseek-v4-proxy)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
