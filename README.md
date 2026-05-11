@@ -63,11 +63,18 @@
 
 #### 🪟 Windows 用户
 1.  确保文件夹内有 `cloudflared-windows-amd64.exe`（若无，请前往 [Cloudflare 官网](https://github.com/cloudflare/cloudflared/releases) 下载）。
-2.  双击运行 **`start_proxy.bat`**。
-3.  会弹出两个窗口。在**隧道窗口**中，找到一串 `https://xxx.trycloudflare.com` 的地址并**复制**。
+2.  运行之前修改一下start_proxy.bat里面的路径："E:\Cminiconda\python.exe" proxy.py ；也就是你python安装的位置，因为我自己安装了好几个；
+3.  双击运行 **`start_proxy.bat`**。
+4.  会弹出窗口。在**隧道窗口**中，找到一串 `https://xxx.trycloudflare.com` 的地址并**复制**。
 
 
 > ⚠️ **注意**：窗口不能关闭。隧道地址每次重启会变化，只要不关窗口就一直有效。
+>
+> 然后双击运行**start_tunnel.bat**
+> .\cloudflared-windows-amd64.exe tunnel --url http://127.0.0.1:9000
+> 这里面的名字要和你下载的程序名字一样，不懂的直接复制给豆包就行了。让豆包给你讲解。
+> 也是会弹出窗口，不要关闭就行了。
+> 
 
 ### 第三步：配置 Cursor
 
@@ -80,6 +87,8 @@
 
 ---
 
+
+<img width="1608" height="413" alt="image" src="https://github.com/user-attachments/assets/a000f95c-39ce-4ba2-857d-18d3c7dbc053" />
 
 ## ❓ 常见问题 (FAQ)
 
