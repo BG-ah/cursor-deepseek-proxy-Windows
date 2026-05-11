@@ -36,8 +36,6 @@
 | 操作系统 | 支持情况 |
 | :--- | :--- |
 | **Windows 10 / 11** | ✅ 支持 |
-| **macOS** | ✅ 支持 |
-| **Linux** | ✅ 支持 |
 
 > **唯一要求**：安装 **Python 3.8** 或更高版本（安装时请务必勾选 `Add Python to PATH`）。
 
@@ -64,12 +62,6 @@
 2.  双击运行 **`start_proxy.bat`**。
 3.  会弹出两个窗口。在**隧道窗口**中，找到一串 `https://xxx.trycloudflare.com` 的地址并**复制**。
 
-#### 🍎 macOS / Linux 用户
-1.  在终端中进入项目目录，运行：
-    ```bash
-    bash start_proxy.sh
-    ```
-2.  稍等片刻，复制终端输出的 `https://xxx.trycloudflare.com` 地址。
 
 > ⚠️ **注意**：窗口不能关闭。隧道地址每次重启会变化，只要不关窗口就一直有效。
 
@@ -84,7 +76,7 @@
 
 ---
 
-## 🛡️ 修复 "Model name not valid" 错误
+## 🛡️ 修复 "Model name not valid" 错误 这一步我没有弄
 
 如果在执行 Apply 或后台任务时报错，请按以下步骤操作：
 
@@ -111,7 +103,7 @@
 </details>
 
 <details>
-<summary>💸 还是提示 Rate limit exceeded？</summary>
+<summary>💸 还是提示 Rate limit exceeded？</summary>    这一步我没有降低
 DeepSeek 免费层级频率极低。你可以编辑 `proxy.py`，将 `TokenBucket(rate=5/60.0, capacity=5)` 中的 `5` 调小（如 `3`），强制降低请求频率。
 </details>
 
@@ -137,7 +129,4 @@ Chat -> Model Selector -> Max Mode
 
 ---
 
-## ⚙️ 高级自定义
 
-* **更换上游**：修改 `proxy.py` 中的 `UPSTREAM_URL`。
-* **固定域名**：如果你有自己的域名，可以配置 Cloudflare 命名隧道（Persistent Tunnel）。
