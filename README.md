@@ -3,6 +3,7 @@
 我为什么重新提交呢？
 因为我试了他的方法，没有完全解决我的问题，但是我是在他基础上进行了修改而成功的，大家看他的就行，我这个主要是针对Windows电脑的。
 
+
 #  Cursor DeepSeek V4 Proxy
 
 > **一键修复 Cursor 使用 DeepSeek V4 时的 `reasoning_content` 错误，告别 `Rate limit exceeded`，让 AI Agent 模式稳定运行。**
@@ -42,6 +43,7 @@
 > **唯一要求**：安装 **Python 3.8** 或更高版本（安装时请务必勾选 `Add Python to PATH`）。
 
 ---
+<img width="451" height="392" alt="image" src="https://github.com/user-attachments/assets/08e3beaa-3d54-40ff-87a8-b170193702bd" />
 
 ## 🚀 超详细三步上手（小白专用）
 
@@ -78,24 +80,6 @@
 
 ---
 
-## 🛡️ 修复 "Model name not valid" 错误 这一步我没有弄
-
-如果在执行 Apply 或后台任务时报错，请按以下步骤操作：
-
-1.  按 `Ctrl+Shift+P`，输入 `Preferences: Open User Settings (JSON)` 并回车。
-2.  在 JSON 的大括号 `{}` 内添加如下配置：
-    ```json
-    "cursor.models": {
-        "deepseek-v4-pro": {
-            "provider": "openai",
-            "apiBase": "[https://你的隧道地址.trycloudflare.com/v1](https://你的隧道地址.trycloudflare.com/v1)",
-            "apiKey": "你的DeepSeek API Key"
-        }
-    }
-    ```
-3.  保存并重启 Cursor。
-
----
 
 ## ❓ 常见问题 (FAQ)
 
